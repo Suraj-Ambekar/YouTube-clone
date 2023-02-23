@@ -3,7 +3,7 @@ import { abbreviateNumber } from "js-abbreviation-number";
 import { Link } from "react-router-dom";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 
-// import VideoLength from "../shared/videoLength";
+import VideoLength from "../shared/VideoLength";
 
 const VideoCard = ({video}) => {
   return (
@@ -15,6 +15,7 @@ const VideoCard = ({video}) => {
             src={video?.thumbnails?.[0]?.url}
             alt=""
           />
+          {video.lengthSeconds && (<VideoLength time={video.lengthSeconds}/>)}
         </div>
       </div>
     </Link>
