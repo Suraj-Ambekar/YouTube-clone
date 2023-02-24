@@ -68,7 +68,7 @@ const VideoDetails = () => {
                 </div>
                 <div className="flex flex-col ml-3">
                   <div className="text-white text-md font-semibold flex items-center">
-                    {video.author.title}
+                    {video?.author?.title}
                     {video?.author?.badges[0]?.type ===
                         "VERIFIED_CHANNEL" && (
                           <BsFillCheckCircleFill className="text-white/[0.5] text-[12px] ml-1" />
@@ -97,7 +97,6 @@ const VideoDetails = () => {
             </div>
           </div>
         </div>
-        
         <div className="flex flex-col py-6 px-4 overflow-y-auto lg:w-[350px] xl:w-[400px]">
           {relatedVideos?.contents?.map((item, index) => {
             if (item?.type !== "video") return false;
