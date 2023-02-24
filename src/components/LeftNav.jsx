@@ -53,7 +53,7 @@ const LeftNav = () => {
                 })}
                 <hr className="my-5 border-white/[0.2]" />
                 <div className="text-white/[0.5] text-[12px]">
-                    Clone by: Suraj Ambekar
+                    Clone by: <a rel="noreferrer" href="https://www.linkedin.com/in/suraj-ambekar/" target="_blank" style={{color:"blue"}}>Suraj Ambekar</a>
                 </div>
             </div>
         </div>
